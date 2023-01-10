@@ -33,27 +33,9 @@ $this->app->register(\L5Swagger\L5SwaggerServiceProvider::class);
 or open your config/app.php and add this line in providers section
 
 L5Swagger\L5SwaggerServiceProvider::class,
-5. add config Controller
-/**
- * @OA\Info(
- *      version="1.0.0",
- *      title="L5 OpenApi",
- *      description="L5 Swagger OpenApi description",
- *      @OA\Contact(
- *          email=""
- *      ),
- *     @OA\License(
- *         name="Apache 2.0",
- *         url="https://www.apache.org/licenses/LICENSE-2.0.html"
- *     )
- * )
- * 
- * @OA\Get(
- *     path="/",
- *     description="Home page",
- *     @OA\Response(response="default", description="Welcome page")
- * )
- */
+
+5. add config Controller (open Controller.php example)
+
 6.  php artisan l5-swagger:generate # optional
 
 7. if system requires Open API flow step 
